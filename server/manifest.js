@@ -34,7 +34,28 @@ module.exports = new Confidence.Store({
                 options: {}
             },
             {
+
                 plugin: './plugins/swagger'
+            }
+            {
+                plugin: 'schwifty',
+                options: {
+                    $filter: 'NODE_ENV',
+                    $default: {},
+                    $base: {
+                        migrateOnStart: true,
+                        knex: {
+                            client: 'sqlite3',
+                            useNullAsDefault: true,     // Suggested for sqlite3
+                            connection: {
+                                filename: ':memory:'
+                            }
+                        }
+                    },
+                    production: {
+                        migrateOnStart: false
+                    }
+                }
             },
             {
                 plugin: {
