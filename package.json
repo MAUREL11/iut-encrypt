@@ -39,5 +39,6 @@
     "sqlite3": "4.x.x",
     "toys": "2.x.x",
     "vision": "5.x.x"
+
   }
 }
