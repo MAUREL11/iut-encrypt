@@ -9,9 +9,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "Faker": "^0.7.2",
     "boom": "7.x.x",
+    "crypto": "^1.0.1",
+    "faker": "^4.1.0",
     "haute-couture": "3.x.x",
     "joi": "14.x.x",
+    "mailgen": "^2.0.7",
+    "nodemailer": "^5.1.1",
     "objection": "1.x.x",
     "pg": "^7.8.0",
     "schmervice": "^1.1.0",
@@ -39,6 +44,5 @@
     "sqlite3": "4.x.x",
     "toys": "2.x.x",
     "vision": "5.x.x"
-
   }
 }

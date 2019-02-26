@@ -10,6 +10,9 @@ services:
       POSTGRES_PASSWORD: hapi
       POSTGRES_USER: hapi
       POSTGRES_DB: unilim
+    ports:
+          - 5432:5432
+
 
   adminer:
     image: adminer
